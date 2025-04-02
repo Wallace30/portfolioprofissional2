@@ -1,0 +1,344 @@
+/* 
+  ============================================
+  Estilos Gerais
+  ============================================
+*/
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial ou uma fonte sans-serif genérica */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    background-color: #f4f4f4; /* Define a cor de fundo como um cinza claro */
+    color: #333; /* Define a cor do texto como um cinza escuro */
+    text-align: justify; /* Alinha o texto justificado */
+    font-size: 16px; /* Define o tamanho da fonte base como 16px */
+}
+/* 
+  ============================================
+  Cabeçalho
+  ============================================
+*/
+header {
+    background-color: #333; /* Define a cor de fundo como preto */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 20px; /* Adiciona um espaçamento interno de 20px */
+    text-align: center; /* Centraliza o texto */
+}
+/* 
+  ============================================
+  Lista de Interesses
+  ============================================
+*/
+.interesses-lista {
+    list-style-type: disc; /* Define o estilo dos marcadores da lista como discos */
+    margin-left: 20px; /* Adiciona margem à esquerda */
+    padding-left: 10px; /* Adiciona preenchimento à esquerda */
+    text-align: justify; /* Alinha o texto justificado */
+}
+.interesses-lista li {
+    font-size: 16px; /* Define o tamanho da fonte dos itens da lista */
+    margin-bottom: 5px; /* Adiciona espaçamento entre os itens da lista */
+}
+/* 
+  ============================================
+  Seções
+  ============================================
+*/
+section {
+    padding: 20px; /* Adiciona espaçamento interno */
+    margin: 20px; /* Adiciona margem externa */
+    background-color: #fff; /* Define a cor de fundo como branco */
+    border-radius: 8px; /* Arredonda as bordas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    opacity: 0; /* Inicialmente invisível para animação */
+    transform: translateY(20px); /* Move a seção para baixo para animação */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Define a transição para a animação */
+    text-align: justify; /* Alinha o texto justificado */
+}
+section.visible {
+    opacity: 1; /* Torna a seção visível */
+    transform: translateY(0); /* Move a seção para a posição original */
+}
+/* 
+  ============================================
+  Títulos de Seção (h2)
+  ============================================
+*/
+h2 {
+    color: #333; /* Define a cor do texto como cinza escuro */
+    text-align: justify; /* Alinha o texto justificado */
+}
+/* 
+  ============================================
+  Categorias de Habilidades
+  ============================================
+*/
+.skill-category {
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo da categoria */
+    text-align: justify; /* Alinha o texto justificado */
+}
+.skill-category h3 {
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo do título da categoria */
+}
+.skill p {
+    display: flex; /* Usa flexbox para alinhar ícones e texto */
+    align-items: center; /* Centraliza verticalmente */
+    font-weight: bold; /* Define o texto em negrito */
+    text-align: justify; /* Alinha o texto justificado */
+}
+.skill i {
+    margin-right: 8px; /* Adiciona espaçamento à direita do ícone */
+    font-size: 20px; /* Define o tamanho do ícone */
+    color: #333; /* Define a cor do ícone como cinza escuro */
+}
+/* 
+  ============================================
+  Rodapé
+  ============================================
+*/
+footer {
+    background-color: #333; /* Define a cor de fundo como preto */
+    color: #fff; /* Define a cor do texto como branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Adiciona espaçamento interno */
+    position: relative; /* Define a posição como relativa */
+    bottom: 0; /* Alinha o rodapé na parte inferior */
+    width: 100%; /* Define a largura como 100% */
+}
+footer nav a {
+    color: #fff; /* Define a cor dos links como branco */
+    margin: 0 10px; /* Adiciona espaçamento entre os links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+footer nav a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* 
+  ============================================
+  Projetos (Slider)
+  ============================================
+*/
+
+.project {
+    display: none; /* Oculta os projetos por padrão */
+}
+
+.project.active {
+    display: block; /* Exibe o projeto ativo */
+}
+
+.slider-controls {
+    text-align: center; /* Centraliza os botões de controle */
+    margin-top: 20px; /* Adiciona espaçamento acima dos botões */
+}
+
+.slider-controls button {
+    padding: 10px 20px; /* Adiciona espaçamento interno nos botões */
+    margin: 0 10px; /* Adiciona espaçamento entre os botões */
+    background-color: #333; /* Define a cor de fundo dos botões como preto */
+    color: #fff; /* Define a cor do texto como branco */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Arredonda as bordas dos botões */
+    cursor: pointer; /* Muda o cursor para pointer */
+}
+
+.slider-controls button:hover {
+    background-color: #555; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* 
+  ============================================
+  Foto de Perfil
+  ============================================
+*/
+
+.foto-perfil {
+    width: 30%; /* Define a largura da foto como 30% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    display: block; /* Exibe a imagem como um bloco */
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaçamento abaixo */
+}
+
+/* 
+  ============================================
+  Barras de Progresso
+  ============================================
+*/
+
+.skill {
+    margin-bottom: 15px; /* Adiciona espaçamento abaixo de cada habilidade */
+}
+
+.skill p {
+    margin: 0 0 5px 0; /* Remove margens padrão e adiciona espaçamento abaixo */
+    font-weight: bold; /* Define o texto em negrito */
+}
+
+.bar {
+    width: 100%; /* Define a largura da barra como 100% */
+    background-color: #e0e0e0; /* Define a cor de fundo da barra como cinza claro */
+    border-radius: 5px; /* Arredonda as bordas da barra */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa a barra */
+}
+
+.progress {
+    height: 10px; /* Define a altura da barra de progresso */
+    background-color: #008000; /* Define a cor de fundo da barra de progresso como verde */
+    border-radius: 5px; /* Arredonda as bordas da barra de progresso */
+    transition: width 0.5s ease-in-out; /* Adiciona uma transição suave ao mudar a largura */
+}
+
+/* Cores específicas para cada categoria de habilidades */
+.skill-category.linguagens .progress {
+    background-color: #008000; /* Verde para linguagens de programação */
+}
+
+.skill-category.ferramentas .progress {
+    background-color: #FFA500; /* Laranja para ferramentas de desenvolvimento */
+}
+
+.skill-category.tecnologias .progress {
+    background-color: #0000FF; /* Azul para tecnologias */
+}
+
+.skill-category.interpessoais .progress {
+    background-color: #800080; /* Roxo para habilidades interpessoais */
+}
+
+/* 
+  ============================================
+  Ícones de Redes Sociais
+  ============================================
+*/
+
+.social-icons {
+    margin-top: 10px; /* Adiciona espaçamento acima dos ícones */
+}
+
+.social-icon {
+    color: #fff; /* Define a cor dos ícones como branco */
+    margin: 0 10px; /* Adiciona espaçamento entre os ícones */
+    font-size: 24px; /* Define o tamanho dos ícones */
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: transform 0.3s ease, color 0.3s ease; /* Adiciona transição suave */
+}
+
+.social-icon:hover {
+    transform: scale(1.9); /* Aumenta o tamanho do ícone ao passar o mouse */
+    color: #FFA500; /* Muda a cor do ícone para laranja ao passar o mouse */
+}
+
+/* 
+  ============================================
+  Responsividade
+  ============================================
+*/
+
+/* Ajustes para tablets (telas menores que 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte base */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduz o tamanho do título principal */
+    }
+
+    h2 {
+        font-size: 18px; /* Reduz o tamanho dos títulos de seção */
+    }
+
+    p, li {
+        font-size: 13px; /* Reduz o tamanho do texto e itens da lista */
+    }
+}
+
+/* Ajustes para celulares (telas menores que 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Aumenta o tamanho da fonte base para melhor legibilidade */
+    }
+
+    h1 {
+        font-size: 18px; /* Reduz o tamanho do título principal */
+    }
+
+    h2 {
+        font-size: 16px; /* Reduz o tamanho dos títulos de seção */
+    }
+
+    p, li {
+        font-size: 14px; /* Aumenta o tamanho do texto e itens da lista */
+    }
+
+    section {
+        padding: 15px; /* Reduz o espaçamento interno das seções */
+        margin: 10px; /* Reduz a margem externa das seções */
+    }
+
+    .foto-perfil {
+        width: 50%; /* Aumenta a largura da foto de perfil */
+    }
+
+    .interesses-lista li {
+        font-size: 14px; /* Aumenta o tamanho dos itens da lista */
+    }
+}
+
+/* 
+  ============================================
+  Seção de Atividades Extracurriculares
+  ============================================
+*/
+
+#extracurricular {
+    padding: 20px; /* Adiciona espaçamento interno */
+    margin: 20px; /* Adiciona margem externa */
+    background-color: #fff; /* Define a cor de fundo como branco */
+    border-radius: 8px; /* Arredonda as bordas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+#extracurricular h2, #extracurricular h3 {
+    color: #333; /* Define a cor do texto como cinza escuro */
+    text-align: center; /* Centraliza os títulos */
+}
+
+#extracurricular ul {
+    list-style-type: disc; /* Define o estilo dos marcadores da lista como discos */
+    margin-left: 20px; /* Adiciona margem à esquerda */
+    padding-left: 10px; /* Adiciona preenchimento à esquerda */
+}
+
+#extracurricular li {
+    font-size: 16px; /* Define o tamanho da fonte dos itens da lista */
+    margin-bottom: 8px; /* Adiciona espaçamento entre os itens da lista */
+}
+
+#extracurricular p {
+    font-size: 16px; /* Define o tamanho da fonte do texto */
+    margin-top: 10px; /* Adiciona espaçamento acima do texto */
+    text-align: justify; /* Alinha o texto justificado */
+}
+
+/* 
+  ============================================
+  Mapa
+  ============================================
+*/
+
+#map {
+    padding: 20px; /* Adiciona espaçamento interno */
+    margin: 20px; /* Adiciona margem externa */
+    background-color: #fff; /* Define a cor de fundo como branco */
+    border-radius: 8px; /* Arredonda as bordas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+#map iframe {
+    border-radius: 8px; /* Arredonda as bordas do iframe */
+    margin-top: 10px; /* Adiciona espaçamento acima do iframe */
+}
